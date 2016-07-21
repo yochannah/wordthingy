@@ -1,0 +1,1 @@
+(ns wordthing.core)

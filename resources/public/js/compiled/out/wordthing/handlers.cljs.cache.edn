@@ -1,0 +1,2 @@
+;; Analyzed by ClojureScript 1.8.51
+{:name wordthing.handlers, :doc nil, :excludes #{}, :use-macros nil, :require-macros nil, :uses nil, :requires {re-frame re-frame.core, re-frame.core re-frame.core, db wordthing.db, wordthing.db wordthing.db}, :imports nil, :cljs.analyzer/constants {:seen #{:initialize-db :set-active-panel :active-panel}, :order [:initialize-db :set-active-panel :active-panel]}}
