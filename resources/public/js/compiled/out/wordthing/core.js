@@ -32,4 +32,4 @@ return wordthing.core.mount_root.call(null);
 });
 goog.exportSymbol('wordthing.core.init', wordthing.core.init);
 
-//# sourceMappingURL=core.js.map?rel=1469133024633
+//# sourceMappingURL=core.js.map?rel=1469134245154

@@ -7,9 +7,15 @@
 (defn home-panel []
   (let [name (re-frame/subscribe [:name])]
     (fn []
-      [:div [:h1 "Writing inspirationifier"]
-      [:button "Inspire me."]
+      [:main [:h1 "Writing inspirationifier"]
+      [:button "Inspire me."] ;; dispatch handler here
        [:div [:a {:href "#/about"} "go to About Page"]]])))
+
+(defn results []
+  [:div
+    [:div "Ok, try to write about... "]
+    [:div]
+  ])
 
 
 ;; about
