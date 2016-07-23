@@ -1,2 +1,0 @@
-;; Analyzed by ClojureScript 1.8.51
-{:use-macros nil, :excludes #{}, :name wordthing.db, :imports nil, :requires nil, :uses nil, :defs {default-db {:name wordthing.db/default-db, :file "src/cljs/wordthing/db.cljs", :line 3, :column 1, :end-line 3, :end-column 16, :meta {:file "/Users/yo/projects/wordthing/src/cljs/wordthing/db.cljs", :line 3, :column 6, :end-line 3, :end-column 16}}}, :require-macros nil, :cljs.analyzer/constants {:seen #{:name}, :order [:name]}, :doc nil}

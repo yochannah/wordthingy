@@ -1,8 +1,17 @@
+#app,body,html {height:100%;}
+
 body {
     font-family: Helvetica, arial, sans-serif;
-
+    background:#f0f0f0;
 }
 
+#app {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;}
+
+h1 {margin-top:0}
 h1, button {font-family: 'Slabo 27px', serif; color:#222; text-shadow: 1px 1px 1px rgba(0,0,0,0.2);}
 
 button { width:10em; height:2em;
@@ -19,4 +28,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background:#fff;
+  border-radius:2px;
+  padding:1em 2em;
+  box-shadow:1px 1px 1px rgba(0,0,0,0.1);
 }

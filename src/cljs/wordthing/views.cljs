@@ -8,7 +8,7 @@
   (let [name (re-frame/subscribe [:name])]
     (fn []
       [:main [:h1 "Writing inspirationifier"]
-      [:button "Inspire me."] ;; dispatch handler here
+      [:button {:on-click #(re-frame/dispatch [:thingy])} "Inspire me."] ;; dispatch handler here
        [:div [:a {:href "#/about"} "go to About Page"]]])))
 
 (defn results []

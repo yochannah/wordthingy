@@ -1,1 +1,0 @@
-{"version":3,"file":"\/Users\/yo\/projects\/wordthing\/resources\/public\/js\/compiled\/out\/wordthing\/config.js","sources":["config.cljs?rel=1469132185161"],"lineCount":10,"mappings":";AAAA;;AAEA,AAAKA,gCACMC;AAEX,oBAAMD;AAAN,AACE,AAACE;;AADH","names":["wordthing.config\/debug?","js\/goog.DEBUG","cljs.core\/enable-console-print!"]}

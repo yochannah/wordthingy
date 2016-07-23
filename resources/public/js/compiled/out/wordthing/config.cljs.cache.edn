@@ -1,2 +1,0 @@
-;; Analyzed by ClojureScript 1.8.51
-{:name wordthing.config, :doc nil, :excludes #{}, :use-macros nil, :require-macros nil, :uses nil, :requires nil, :imports nil, :defs {debug? {:name wordthing.config/debug?, :file "src/cljs/wordthing/config.cljs", :line 3, :column 1, :end-line 3, :end-column 12, :meta {:file "/Users/yo/projects/wordthing/src/cljs/wordthing/config.cljs", :line 3, :column 6, :end-line 3, :end-column 12}}}}
