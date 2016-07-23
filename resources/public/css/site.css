@@ -23,8 +23,9 @@ button {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 button {
-  width: 10em;
+  min-width: 15em;
   height: 2em;
+  text-transform: capitalize;
   background-color: #03A9F4;
   color: #fff;
   border: 0;

@@ -1,4 +1,5 @@
 (ns wordthing.db)
 
 (def default-db
-  {:name "re-frame"})
+  {:initialised? false
+   :interjection "Ok"})

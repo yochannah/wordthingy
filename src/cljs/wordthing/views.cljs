@@ -1,19 +1,31 @@
 (ns wordthing.views
-    (:require [re-frame.core :as re-frame]))
+    (:require [re-frame.core :as re-frame]
+              [json-html.core :as json-html])
+(:use [json-html.core :only [edn->hiccup]]))
 
 
 ;; home
 
 (defn home-panel []
-  (let [name (re-frame/subscribe [:name])]
+  (let [name (re-frame/subscribe [:name])
+        interjection (re-frame/subscribe [:interjection])
+        ]
     (fn []
       [:main [:h1 "Writing inspirationifier"]
-      [:button {:on-click #(re-frame/dispatch [:thingy])} "Inspire me."] ;; dispatch handler here
-       [:div [:a {:href "#/about"} "go to About Page"]]])))
+        [:button
+          {:on-click (fn [e]
+            (.preventDefault js/e)
+            (re-frame/dispatch [:search]))}
+          @interjection
+         ;"Inspire me"
+         ] ;; dispatch handler here
+       [:div [:a {:href "#/about"} "go to About Page"]]
+       [:div.db  (edn->hiccup  @(re-frame/subscribe [:db]) )]
+       ])))
 
 (defn results []
   [:div
-    [:div "Ok, try to write about... "]
+    [:div "Boing"]
     [:div]
   ])
 
@@ -31,7 +43,7 @@
 (defmulti panels identity)
 (defmethod panels :home-panel [] [home-panel])
 (defmethod panels :about-panel [] [about-panel])
-(defmethod panels :default [] [:div])
+(defmethod panels :default [] [home-panel])
 
 (defn show-panel
   [panel-name]
